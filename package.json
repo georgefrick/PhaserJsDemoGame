@@ -1,0 +1,34 @@
+{
+  "name": "PhaserJsDemoGame",
+  "version": "1.0.0",
+  "description": "Intro To PhaserJS Demo Game",
+  "browser": {
+    "lodash": "./node_modules/lodash/dist/lodash.compat.js",
+    "Phaser": "./src/js/lib/phaser.arcade.js"
+  },
+  "browserify-shim": {
+    "Phaser": {
+      "exports": "Phaser"
+    },
+    "lodash": {
+      "exports": "_"
+    }
+  },
+  "devDependencies": {
+    "browserify": "^4.1.5",
+    "browserify-shim": "^3.5.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^2.1.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-open": "^0.2.3",
+    "load-grunt-tasks": "~2.0.0"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "port": 3017,
+  "liveReloadPort": 3018
+}
